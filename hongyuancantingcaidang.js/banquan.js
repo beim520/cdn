@@ -5,7 +5,6 @@ function setClipboardText(event) {
     //对documentfragment不熟，不知道怎么获取里面的内容，用了一个比较笨的方式
     node.appendChild(window.getSelection().getRangeAt(0).cloneContents());
     //getRangeAt(0)返回对基于零的数字索引与传递参数匹配的选择对象中的范围的引用。对于连续选择，参数应为零。
-        + '\n\n著作权归作者所有。\n'
     var htmlData = '<div>' +
         node.innerHTML +
         '<br /><br />著作权归作者所有。<br />' +
