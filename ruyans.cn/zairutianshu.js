@@ -29,3 +29,4 @@ function createtime() {
         .innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
 }
 setInterval("createtime()", 250);
+// 112332321323213232
