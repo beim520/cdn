@@ -3,10 +3,10 @@ var context = canvas1.getContext('2d');
 var canvasbig = document.getElementsByClassName("canvasbig")[0];
 //背景图片
 var bg = new Image();
-bg.src = "img/bg.jpg";
+bg.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/bg.jpg";
 //全民飞机大战标题
 var starthead = new Image();
-starthead.src = "img/starthead.png";
+starthead.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/starthead.png";
 //加载时候的狗子和文字
 var load = new Image();
 var loadnum = 1,
@@ -17,12 +17,12 @@ var loadtextblur = true,
     pointnum = 1;
 //我方战斗机
 var myplane = new Image();
-myplane.src = "img/myplane1.png";
+myplane.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/myplane1.png";
 var myplaneX = canvas1.width / 2,
     myplaneY = 730;
 //战斗机子弹
 var bullet = new Image();
-bullet.src = "img/bullet.png";
+bullet.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/bullet.png";
 var bullettime = 0,
     bulletnum = 0,
     bulletarr = [];
@@ -30,13 +30,13 @@ var bullettime = 0,
 var enemytime = 0,
     enemyarr = [];
 var enemy1 = new Image();
-enemy1.src = `img/enemy1.png`;
+enemy1.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/enemy1.png`;
 var enemy2 = new Image();
-enemy2.src = `img/enemy2.png`;
+enemy2.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/enemy2.png`;
 var enemy3 = new Image();
-enemy3.src = `img/enemy3.png`;
+enemy3.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/enemy3.png`;
 var enemy4 = new Image();
-enemy4.src = `img/enemy4.png`;
+enemy4.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/enemy4.png`;
 var enemyall = [enemy1, enemy2, enemy3, enemy4];
 //战斗机爆炸
 var myplane1boom = new Image();
@@ -46,16 +46,16 @@ var myboomnum = 1,
 var enemychangearr = [];
 //boss警告
 var warning1 = new Image();
-warning1.src = "img/warning1.png"
+warning1.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/warning1.png"
 var warning2 = new Image();
-warning2.src = "img/warning2.png";
+warning2.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/warning2.png";
 var warningtime = 0,
     warningchange = 0;
 //boss出场背景
 var bossbg = new Image();
-bossbg.src = "img/bg2.jpg";
+bossbg.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/bg2.jpg";
 var boss = new Image();
-boss.src = "img/planeboss.png";
+boss.src = "https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/planeboss.png";
 //boss改变飞机速度
 var bossattacktime = 0;
 var bossattacknum = 1;
@@ -107,7 +107,7 @@ var obj = {
             myboomnum = 1;
             myboomtime = 0;
             enemychangearr = [];
-            myplane1boom.src = `img/myplane1boom${myboomnum}.png`;
+            myplane1boom.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/myplane1boom${myboomnum}.png`;
         } else if (obj.dead == 1 && obj.life == 0) {
             obj.gameover = 1;
         }
@@ -161,7 +161,7 @@ var obj = {
             if (loadnum == 10) {
                 loadnum = 1;
             }
-            load.src = `img/load${loadnum}.png`;
+            load.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/load${loadnum}.png`;
         }
         context.beginPath();
         context.fillStyle = 'white';
@@ -305,7 +305,7 @@ var obj = {
         obj.dead = 1;
         myboomtime++;
         if (myboomtime >= 10) {
-            myplane1boom.src = `img/myplane1boom${myboomnum}.png`;
+            myplane1boom.src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/myplane1boom${myboomnum}.png`;
             myboomnum++;
             myboomtime = 0;
         }
@@ -336,7 +336,7 @@ var obj = {
         for (let i = 0; i < enemychangearr.length; i++) {
             enemychangearr[i][3]++;
             if (enemychangearr[i][3] >= 10) {
-                enemychangearr[i][5].src = `img/enemy${enemychangearr[i][2]}boom${enemychangearr[i][4]}.png`;
+                enemychangearr[i][5].src = `https://cdn.jsdelivr.net/gh/r-jian/cdn@1.6/yx/feijidazhan/img/enemy${enemychangearr[i][2]}boom${enemychangearr[i][4]}.png`;
                 enemychangearr[i][4]++;
                 enemychangearr[i][3] = 0;
             }
