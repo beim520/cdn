@@ -24,8 +24,8 @@ function createtime() {
         snum = "0" + snum;
     }
     document.getElementById("timeDate")
-        .innerHTML = "❤与她相遇的 " + dnum + " 天❤ ";
+        .innerHTML = "与她相遇的 " + dnum + " 天 ";
     document.getElementById("times")
-        .innerHTML = hnum + " 小时❤ " + mnum + " 分❤ " + snum + " 秒❤";
+        .innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
 }
 setInterval("createtime()", 250);
