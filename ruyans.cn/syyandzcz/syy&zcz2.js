@@ -6,7 +6,7 @@ function isIE() {
         window.close();
     }
     var audio = document.createElement("audio");
-    audio.setAttribute("src", "http://music.163.com/song/media/outer/url?id=1302114856.mp3");
+    audio.setAttribute("src", "https://music.163.com/song/media/outer/url?id=1302114856.mp3");
     audio.setAttribute("autoplay", "autoplay");
     0
 }
